@@ -34,11 +34,11 @@ class CounterBlocPage extends StatelessWidget {
                 width: 300,
                 height: 70,
                 child: Center(
-                  child: BlocBuilder<CounterCubit, int>(
+                  child: BlocBuilder<CounterCubit, CounterState>(
                     builder: (context, state) {
                       log('bloc');
                       return Text(
-                        '$state',
+                        '${state.san}',
                         style: const TextStyle(fontSize: 50),
                       );
                     },

@@ -1,5 +1,5 @@
-import 'package:flash_chat/pages/auth/login_page.dart';
-import 'package:flash_chat/pages/auth/register_page.dart';
+import 'package:flash_chat/modules/auth/pages/login_page.dart';
+import 'package:flash_chat/modules/auth/pages/register_page.dart';
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {

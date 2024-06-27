@@ -5,7 +5,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flash_chat/model/user_model.dart';
 
 class HomeService {
-  static Future<void> sendMessage(String sms) async {
+  Future<void> sendMessage(String sms) async {
     try {
       final sender = FirebaseAuth.instance.currentUser;
       if (sender != null) {

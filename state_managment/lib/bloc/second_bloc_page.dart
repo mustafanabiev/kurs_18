@@ -13,10 +13,10 @@ class SecondBlocPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            BlocBuilder<CounterCubit, int>(
+            BlocBuilder<CounterCubit, CounterState>(
               builder: (context, state) {
                 return Text(
-                  '$state',
+                  '${state.san}',
                   style: const TextStyle(fontSize: 50),
                 );
               },
